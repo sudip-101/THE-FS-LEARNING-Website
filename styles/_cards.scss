@@ -29,6 +29,10 @@
       font-weight: 600;
       color: $blue;
       margin-left: auto;
+      transition: color 250ms ease-in-out;
+      &:hover {
+        color: $blue-dark;
+      }
     }
   }
   .cards-container {
@@ -71,6 +75,10 @@
         align-items: center;
         background: $blue;
         border-radius: $br-medium;
+        transition: background 250ms ease-in-out;
+        &:hover {
+          background: $blue-dark;
+        }
         .btn-title {
           transform: translateX(-50%);
           font-weight: 500;

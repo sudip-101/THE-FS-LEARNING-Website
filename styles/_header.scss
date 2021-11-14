@@ -125,9 +125,17 @@
           padding-left: 20px;
         }
         font-weight: 300;
+        color: $white;
+        transition: color 250ms ease-in-out;
 
         #learning {
           font-weight: 600;
+        }
+
+        li {
+          &:hover {
+            color: $medium-white;
+          }
         }
       }
     }

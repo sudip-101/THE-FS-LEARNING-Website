@@ -61,6 +61,10 @@ body {
     align-items: center;
     gap: 36px;
     width: max-content;
+    transition: background 250ms ease-in-out;
+    &:hover {
+      background: $orange-dark;
+    }
   }
 
   a {

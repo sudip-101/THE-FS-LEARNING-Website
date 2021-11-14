@@ -56,12 +56,18 @@ body .orange-btn {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  -webkit-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
 }
 
 @media only screen and (min-width: 1364px) {
   body .orange-btn {
     font-size: 18px;
   }
+}
+
+body .orange-btn:hover {
+  background: #ee6300;
 }
 
 body a {
@@ -257,6 +263,9 @@ body p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: 300;
+  color: #fff;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 @media only screen and (min-width: 1148px) {
@@ -267,6 +276,10 @@ body p {
 
 .header-container .header-bottom .navbar .nav-links #learning {
   font-weight: 600;
+}
+
+.header-container .header-bottom .navbar .nav-links li:hover {
+  color: #e2e2e2;
 }
 
 @media only screen and (max-width: 1148px) {
@@ -930,6 +943,12 @@ body p {
   font-weight: 600;
   color: #3e88e9;
   margin-left: auto;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.cards-section .cards-page-subdetails .view-all-btn:hover {
+  color: #3777ca;
 }
 
 .cards-section .cards-container {
@@ -1001,6 +1020,12 @@ body p {
           align-items: center;
   background: #3e88e9;
   border-radius: 8px;
+  -webkit-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+}
+
+.cards-section .cards-container .card .blue-btn:hover {
+  background: #3777ca;
 }
 
 .cards-section .cards-container .card .blue-btn .btn-title {
