@@ -1,0 +1,89 @@
+.cards-section {
+  padding: $padding-big;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-block: 60px;
+  .cards-page-title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+    .blue-part {
+      color: $blue;
+    }
+  }
+  .cards-page-subdetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 16px;
+    .cards-page-para {
+      font-weight: 500;
+      max-width: 600px;
+    }
+    .view-all-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      color: $blue;
+      margin-left: auto;
+    }
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: space-between;
+    .card {
+      padding: $padding-small;
+      height: 400px;
+      @media only screen and (max-width: 1024px) {
+        height: 480px;
+      }
+      background: url("/assets/woman.jpg");
+      background-color: rgba(0, 0, 0, 0.45);
+      border-radius: $br-big;
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 1rem;
+      transition: background-color 250ms ease-in-out;
+      .card-title {
+        line-height: 1.25;
+        font-size: 1.25rem;
+        @media only screen and (max-width: 1024px) {
+          font-size: 24px;
+        }
+      }
+      .blue-btn {
+        padding: 14px;
+        padding-left: 50%;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $blue;
+        border-radius: $br-medium;
+        .btn-title {
+          transform: translateX(-50%);
+          font-weight: 500;
+          color: $white;
+        }
+        i {
+          font-size: 18px;
+          color: $white;
+        }
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.575);
+      }
+    }
+  }
+}

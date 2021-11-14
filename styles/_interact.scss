@@ -1,0 +1,152 @@
+.interact-section {
+  padding: $padding-big;
+  margin-block: 24px;
+  .interact-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .book-ask {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-grow: 1;
+      border-bottom: 2px solid $greyish-blue;
+      margin-bottom: -2px;
+      padding-bottom: 8px;
+      cursor: pointer;
+      &.active {
+        border-bottom: 4px solid orange;
+        margin-bottom: -4px;
+      }
+
+      &:nth-child(1) {
+        padding-right: 24px;
+      }
+
+      &:nth-child(2) {
+        padding-left: 24px;
+      }
+
+      i {
+        font-size: 28px;
+        color: $blue;
+      }
+
+      .book-ask-title {
+        font-size: 28px;
+        @media only screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+        font-weight: 600;
+      }
+    }
+  }
+
+  .part-book {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &.active {
+      display: none;
+    }
+    .part-book-top {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .book-heading {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        @media only screen and (max-width: 768px) {
+          font-size: 2.25rem;
+        }
+        @media only screen and (max-width: 548px) {
+          font-size: 1.65rem;
+        }
+        line-height: 1.2;
+        font-weight: 500;
+
+        .bh-part-blue {
+          color: $blue;
+        }
+      }
+      .pb-para {
+        font-weight: 500;
+        font-size: 20px;
+        @media only screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .part-book-bottom {
+      .pb-bottom-title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        @media only screen and (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+        font-weight: 700;
+      }
+      .pb-bottom-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+
+        li {
+          display: flex;
+          gap: 16px;
+          font-weight: 500;
+
+          .li-icon {
+            font-size: 18px;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .part-ask-expert {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &.active {
+      display: none;
+    }
+    .part-ask {
+      display: flex;
+      gap: 12px;
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+      .Q-A {
+        font-weight: bold;
+      }
+
+      .ques-ans {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .profile {
+          display: flex;
+          gap: 12px;
+          .profile-qa {
+            h4 {
+              margin-bottom: 4px;
+            }
+            .Q {
+              font-weight: 500;
+            }
+            .A {
+              max-width: 525px;
+              color: $medium-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

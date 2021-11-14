@@ -1,0 +1,147 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $padding-big;
+  .hero-top {
+    padding-left: 20px;
+    @media only screen and (max-width: 1148px) {
+      padding-left: 0;
+    }
+    margin-top: 60px;
+    @media only screen and (min-width: 1148px) {
+      margin-top: 125px;
+    }
+
+    .top-title {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    i {
+      margin-inline: 4px;
+    }
+
+    span {
+      color: $medium-black;
+    }
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 2rem;
+    align-items: center;
+
+    .img-area {
+      height: 100%;
+      background: url("./../assets/img.jpeg") rgba(0, 0, 0, 0.5);
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      color: $white;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3rem;
+      padding: 24px;
+
+      max-width: 330px;
+      margin: auto;
+
+      border-radius: $br-big;
+      position: relative;
+      z-index: 1;
+
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.65);
+
+      .mute-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        z-index: 2;
+      }
+
+      .pause-btn {
+        height: 60px;
+        width: 60px;
+        border: 4px solid $orange;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: auto;
+      }
+
+      .hero-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          display: flex;
+          gap: 12px;
+
+          i {
+            font-size: 2rem;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .hero-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.25rem;
+
+      padding-block: 3rem 1rem;
+
+      border-bottom: 2px solid $greyish-blue;
+
+      .hero-heading {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+      }
+
+      .name-title {
+        font-size: 24px;
+        color: $orange;
+      }
+
+      .speaker-details {
+        h4 {
+          font-size: 20px;
+          margin-bottom: 6px;
+          font-weight: 600;
+        }
+
+        p {
+          color: $medium-black;
+          line-height: 1.6;
+        }
+      }
+
+      .LinkedIn-icon {
+        i {
+          color: $greyish-blue;
+          font-size: 28px;
+          transition: color 200ms ease;
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

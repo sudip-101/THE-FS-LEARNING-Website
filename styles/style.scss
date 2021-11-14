@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: $black;
+
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+  @media only screen and (min-width: 1364px) {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: $padding-big;
+
+    //   max-width: 1280px;
+
+    margin: auto;
+  }
+
+  .main-container {
+    .section {
+      .section-content {
+        max-width: 1000px;
+        margin: auto;
+      }
+    }
+  }
+
+  button {
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  .orange-btn {
+    padding: 12px 12px 12px 36px;
+    border-radius: $br-medium;
+    background: $orange;
+    color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    @media only screen and (min-width: 1364px) {
+      font-size: 18px;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: max-content;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+  p {
+    line-height: 1.6;
+  }
+}
+
+@import "./header";
+@import "./hero";
+@import "./interact";
+@import "./offer";
+@import "./cards";
+@import "./mediaQuery";
