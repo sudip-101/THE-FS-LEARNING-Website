@@ -9,6 +9,7 @@ bookCall.onclick = () => {
   askExpert.classList.remove("active");
   partAskExpert.classList.add("active");
   partBook.classList.remove("active");
+  partBook.classList.remove("active-state");
 };
 askExpert.onclick = () => {
   askExpert.classList.add("active");
